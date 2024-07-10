@@ -24,3 +24,6 @@ Examples:
   but the first sums to 23 and the second to 22. 
   No other sets work either. 
 */
+
+
+// Solution
