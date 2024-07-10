@@ -57,3 +57,5 @@ function createTwoSetsOfEqualSum(n) {
   // or return the array if the values are equal
   return [arr1, arr2];
 }
+
+// or
