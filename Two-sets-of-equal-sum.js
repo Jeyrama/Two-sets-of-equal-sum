@@ -59,3 +59,22 @@ function createTwoSetsOfEqualSum(n) {
 }
 
 // or
+
+function createTwoSetsOfEqualSum(n) {
+	let equalSum = (n * (n + 1)) / 2;
+	if (equalSum % 2 != 0) return [];
+	let acc = equalSum / 2;
+
+	let answer = [[], []];
+
+	for (let i = n; i >= 1; i--) {
+		if (acc - i >= 0) {
+			acc -= i;
+			answer[0].push(i);
+		} else {
+			answer[1].push(i);
+		}
+	}
+
+	return answer;
+}
